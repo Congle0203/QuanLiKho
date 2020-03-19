@@ -1,0 +1,28 @@
+<form nz-form [formGroup]="unitForm" autocomplete="off">
+
+  <nz-form-item>
+    <nz-form-label [nzSm]="7" [nzXs]="24" nzRequired nzFor="name">Tên đơn vị</nz-form-label>
+    <nz-form-control [nzSm]="17" [nzXs]="24" nzErrorTip="Vui lòng nhập tên đơn vị !">
+      <input type="text" nz-input formControlName="tendv" id="tendv" autofocus />
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzSm]="7" [nzXs]="24" nzRequired nzFor="name">Mô tả</nz-form-label>
+    <nz-form-control [nzSm]="17" [nzXs]="24" nzErrorTip="Vui lòng nhập mô tả !">
+      <input type="text" nz-input formControlName="Description" id="Description" autofocus />
+    </nz-form-control>
+  </nz-form-item>
+
+
+  
+</form>
+
+<div *nzModalFooter>
+  <button nz-button nzType="default" (click)="destroyModal()">
+      <i nz-icon nzType="close" nzTheme="outline"></i>Hủy
+  </button>
+  <button nz-button nzType="primary" (click)="saveChanges()" [nzLoading]="loadingSaveChanges">
+      <i nz-icon nzType="save" nzTheme="outline"></i>Lưu
+  </button>
+</div>

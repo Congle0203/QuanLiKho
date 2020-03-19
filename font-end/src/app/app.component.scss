@@ -1,0 +1,118 @@
+nz-header,
+ nz-footer {
+      background:silver;
+       color:black;
+       text-align: center;
+      }
+
+      nz-layout {
+        // height: 100%;
+        .inner-content {
+          padding: 20px;
+          background:white;
+          height: 100%;
+          
+        }
+        
+      }
+
+      [nz-menu] {
+        width: 200px;
+        height: 900px;
+      }
+      
+      .menu-sidebar {
+        position: relative;
+        z-index: 10;
+        min-height: 100vh;
+        box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .nav-item:not(:last-child) {
+        border-right: 1px solid pink;
+      }
+      
+      @keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+      
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      
+      .sidebarMenu {
+        border-right: none;
+      }
+      
+      nz-content {
+        display:inline-table;
+         color: #b5603f;
+         justify-content: center;
+      }
+
+
+      .logo{
+        background-image: url("https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/90025041_1556879131141494_1172249299820478464_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=d4xCH9sInTgAX9ogTT9&_nc_ht=scontent.fhan2-4.fna&oh=8694a2d3cf930acfcc88bb25241a1fe0&oe=5E960B1D"); 
+        width: 200px;
+        height:150px;
+          background-repeat: initial;
+          background-position:center center;
+          background-size: cover;
+          //  margin: 250px;
+      
+      // [nz-icon] {
+      //   margin-right: 6px;
+      //   font-size: 12px;
+      // }
+
+      // .inner-content {
+      //     padding: 24px;
+      //     background: #fff;
+      //     height: 100%;
+      //   }
+      }
+
+
+
+      
+  //***************************************************************************************
+
+// nz-layout {
+//   height: 100%;
+// }
+
+// .menu-sidebar {
+//   position: relative;
+//   z-index: 10;
+//   min-height: 100vh;
+//   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+//   overflow-y: auto;
+//   overflow-x: hidden;
+// 
+
+// @keyframes spin {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//   }
+
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//   }
+// }
+
+// .sidebarMenu {
+//   border-right: none;
+// }
+
+// .inner-content {
+//   padding: 24px;
+//   background: #fff;
+//   height: 100%;
+// }
+
+// nz-content {
+//   display: inline-table;
+// 
